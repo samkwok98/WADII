@@ -625,3 +625,25 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+-- Store Items
+
+CREATE TABLE IF NOT EXISTS `products` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`name` varchar(200) NOT NULL,
+	`desc` text NOT NULL,
+	`price` decimal(7,2) NOT NULL,
+	`rrp` decimal(7,2) NOT NULL DEFAULT '0.00',
+	`quantity` int(11) NOT NULL,
+	`img` text NOT NULL,
+	`date_added` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+INSERT INTO `products` (`id`, `name`, `desc`, `price`, `rrp`, `quantity`, `img`, `date_added`) VALUES
+(1, 'Bird Nest', '<p>Ready-to-drink and can be taken chilled or warmed.</p>\r\n<h3>Suitable for:</h3>\r\n<ul>\r\n<li>All ages</li>\r\n<li>Beauty Care</li>\r\n<li>Pregnant women or new mothers during post-natal periods</li>\r\n<li>Recovering Patients</li>\r\n</ul>', '50.00', '50.00', 10, 'itemID1.jpg', '2022-11-06 16:00:00'),
+(2, 'Ginseng', '<p>Late nights and stress can burn away the Fluid (Yin) in the body, leading to a drained and tired state.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Boosts Qi</li>\r\n<li>Nourish Yin</li>\r\n<li>Hydrates body</li>\r\n<li>Clears Heat</li>\r\n</ul>', '149.90', '150.00', 30, 'itemID2.jpg', '2022-11-06 16:00:00'),
+(3, 'Royal Jelly', '<p>Raw and pure honey, from the best of bee farms.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Beauty Support</li>\r\n<li>General Wellness</li>\r\n</ul>', '70.00','70.00', 30, 'itemID3.jpg', '2022-11-06 16:00:00'),
+(4,'AG T&T Supplemental Powder' ,'<p>Our custom made, signature supplmental powder, made with the freshest of ingredients from our secret farm</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Beauty Support</li>\r\n<li>Energizing Effect</li>\r\n</ul>', '300.00', '300.00', 10, 'itemID4.jpg', '2022-11-06 16:00:00');
+
+
