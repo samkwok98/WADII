@@ -1,5 +1,10 @@
 
   <?php include 'header.php';?>
+  <style>
+    h6 {
+      border: 1px solid black;
+    }
+  </style>
   <!-- Bnr Header -->
   <section class="main-banner">
     <div class="tp-banner-container">
