@@ -10,12 +10,6 @@
         width: 60%;
         border: 5px solid black;
        }
-
-       body {
-        padding-top: 10px;
-        padding-bottom: 10px;
-       }
-
     </style>
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -39,7 +33,8 @@
       </div>
     </div>
 
-    <div id="map" style="margin: auto"></div>
+    <div id="map" style="margin: auto;"></div>
+
     <script>
         function initMap(coordinates) {
           var map = new google.maps.Map(
