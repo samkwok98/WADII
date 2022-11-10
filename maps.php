@@ -10,13 +10,17 @@
         width: 60%;
         border: 5px solid black;
        }
+
+       h2 {
+        padding: 20px;
+       }
     </style>
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body onload="change('scis')">
-    <h3>Our stores</h3>
+    <h2>Our stores</h2>
 
     <div class="text-center mt-5 mb-5">
       <div class="btn-group" role="group" aria-label="Basic radio toggle button group">

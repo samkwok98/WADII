@@ -2,9 +2,9 @@
 
 include("adheader.php");
 include("dbconnection.php");
-if(isset($_POST[submit]))
+if(isset($_POST['submit']))
 {
-  if(isset($_GET[editid]))
+  if(isset($_GET['editid']))
   {
    $sql ="UPDATE appointment SET patientid='$_POST[select4]',departmentid='$_POST[select5]',appointmentdate='$_POST[appointmentdate]',appointmenttime='$_POST[time]',doctorid='$_POST[select6]',status='$_POST[select]' WHERE appointmentid='$_GET[editid]'";
    if($qsql = mysqli_query($con,$sql))
@@ -35,7 +35,7 @@ else
 }
 }
 }
-if(isset($_GET[editid]))
+if(isset($_GET['editid']))
 {
 	$sql="SELECT * FROM appointment WHERE appointmentid='$_GET[editid]' ";
 	$qsql = mysqli_query($con,$sql);
@@ -64,12 +64,12 @@ if(isset($_GET[editid]))
                                 <div class="form-group">
                                     <div class="form-line">
                                         <?php
-                                        if(isset($_GET[patid]))
+                                        if(isset($_GET['patid']))
                                         {
                                           $sqlpatient= "SELECT * FROM patient WHERE patientid='$_GET[patid]'";
                                           $qsqlpatient = mysqli_query($con,$sqlpatient);
                                           $rspatient=mysqli_fetch_array($qsqlpatient);
-                                          echo $rspatient[patientname] . " (Patient ID - $rspatient[patientid])";
+                                          echo $rspatient['patientname'] . " (Patient ID - $rspatient[patientid])";
                                           echo "<input type='hidden' name='select4' value='$rspatient[patientid]'>";
                                       }
                                       else
@@ -82,7 +82,7 @@ if(isset($_GET[editid]))
                                             $qsqlpatient = mysqli_query($con,$sqlpatient);
                                             while($rspatient=mysqli_fetch_array($qsqlpatient))
                                             {
-                                                if($rspatient[patientid] == $rsedit[patientid])
+                                                if($rspatient['patientid'] == $rsedit['patientid'])
                                                 {
                                                  echo "<option value='$rspatient[patientid]' selected>$rspatient[patientid] - $rspatient[patientname]</option>";
                                              }
@@ -111,7 +111,7 @@ if(isset($_GET[editid]))
                                     $qsqldepartment = mysqli_query($con,$sqldepartment);
                                     while($rsdepartment=mysqli_fetch_array($qsqldepartment))
                                     {
-                                       if($rsdepartment[departmentid] == $rsedit[departmentid])
+                                       if($rsdepartment['departmentid'] == $rsedit['departmentid'])
                                        {
                                         echo "<option value='$rsdepartment[departmentid]' selected>$rsdepartment[departmentname]</option>";
                                     }
@@ -134,7 +134,7 @@ if(isset($_GET[editid]))
                                 <div class="form-group">
                                     <div class="form-line">
                                         <input class="form-control" type="date" name="appointmentdate"
-                                            id="appointmentdate" value="<?php echo $rsedit[appointmentdate]; ?>">
+                                            id="appointmentdate" value="<?php echo $rsedit['appointmentdate']; ?>">
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@ if(isset($_GET[editid]))
                                 <div class="form-group">
                                     <div class="form-line">
                                         <input class="form-control" type="time" name="time" id="time"
-                                            value="<?php echo $rsedit[appointmenttime]; ?>" />
+                                            value="<?php echo $rsedit['appointmenttime']; ?>" />
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +156,7 @@ if(isset($_GET[editid]))
                                 $qsqldoctor = mysqli_query($con,$sqldoctor);
                                 while($rsdoctor = mysqli_fetch_array($qsqldoctor))
                                 {
-                                   if($rsdoctor[doctorid] == $rsedit[doctorid])
+                                   if($rsdoctor['doctorid'] == $rsedit['doctorid'])
                                    {
                                     echo "<option value='$rsdoctor[doctorid]' selected>$rsdoctor[doctorname] ( $rsdoctor[departmentname] ) </option>";
                                 }
@@ -180,7 +180,7 @@ if(isset($_GET[editid]))
                                 <div class="form-group">
                                     <div class="form-line">
                                         <textarea rows="4" class="form-control no-resize" name="appreason"
-                                            id="appreason" s><?php echo $rsedit[app_reason]; ?></textarea>
+                                            id="appreason" s><?php echo $rsedit['app_reason']; ?></textarea>
 
 
                                     </div>
@@ -195,7 +195,7 @@ if(isset($_GET[editid]))
                         $arr = array("Active","Inactive");
                         foreach($arr as $val)
                         {
-                           if($val == $rsedit[status])
+                           if($val == $rsedit['status'])
                            {
                             echo "<option value='$val' selected>$val</option>";
                         }
