@@ -27,6 +27,7 @@ $tim = date("H:i:s");
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/storestyle.css">
 
 <!-- Fonts Online -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Raleway:200,300,400,500,600,700,800,900" rel="stylesheet">

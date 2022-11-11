@@ -88,44 +88,46 @@ include('header.php')
 
 <div class="cart content-wrapper">
     <h1>Shopping Cart</h1>
-    <form action="storeindex.php?page=storecart" method="post">
-        <table>
+    <form class="scrolling-wrapper" action="storeindex.php?page=storecart" method="post">
+        <div class="table-responsive">
+        <table class="table">
             <thead>
                 <tr>
-                    <td colspan="2">Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Total</td>
+                    <th scope="col" colspan="2">Product</th>
+                    <th scope="col" >Price</th>
+                    <th scope="col" >Quantity</th>
+                    <th scope="col" >Total</th>
                 </tr>
             </thead>
             <tbody>
                 <?php if (empty($products)): ?>
-                <tr>
+                <tr scope="row">
                     <td colspan="5" style="text-align:center;">You have no products added in your Shopping Cart</td>
                 </tr>
                 <?php else: ?>
                 <?php foreach ($products as $product): ?>
                 <tr>
-                    <td class="img">
+                    <td scope="col" class="img">
                         <a href="storeindex.php?page=storeproduct&id=<?=$product['id']?>">
                             <img src="images/<?=$product['img']?>" width="50" height="50" alt="<?=$product['name']?>">
                         </a>
                     </td>
-                    <td>
+                    <td scope="col">
                         <a href="storeindex.php?page=storeproduct&id=<?=$product['id']?>"><?=$product['name']?></a>
                         <br>
                         <a href="storeindex.php?page=storecart&remove=<?=$product['id']?>" class="remove">Remove</a>
                     </td>
-                    <td class="price">&dollar;<?=$product['price']?></td>
+                    <td scope="col" class="price">&dollar;<?=$product['price']?></td>
                     <td class="quantity">
                         <input type="number" name="quantity-<?=$product['id']?>" value="<?=$products_in_cart[$product['id']]?>" min="1" max="<?=$product['quantity']?>" placeholder="Quantity" required>
                     </td>
-                    <td class="price">&dollar;<?=$product['price'] * $products_in_cart[$product['id']]?></td>
+                    <td scope="col" class="price">&dollar;<?=$product['price'] * $products_in_cart[$product['id']]?></td>
                 </tr>
                 <?php endforeach; ?>
                 <?php endif; ?>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
         <div class="subtotal">
             <span class="text">Subtotal</span>
             <span class="price">&dollar;<?=$subtotal?></span>

@@ -26,10 +26,7 @@ include("header.php")
     <div>
         <h1 class="name"><?=$product['name']?></h1>
         <span class="price">
-            &dollar;<?=$product['price']?>
-            <?php if ($product['rrp'] > 0): ?>
-            <span class="rrp">&dollar;<?=$product['rrp']?></span>
-            <?php endif; ?>
+            &dollar;<?=$product['price'], ' ',$product['currency']?>
         </span>
         <form action="storeindex.php?page=storecart" method="post">
             <input type="number" name="quantity" value="1" min="1" max="<?=$product['quantity']?>" placeholder="Quantity" required>
