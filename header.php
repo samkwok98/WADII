@@ -9,12 +9,11 @@ $tim = date("H:i:s");
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="author" content="M_Adnan" />
 <!-- Document Title -->
-<title>AGTT TCM</title>
+<title>AG T&T TCM</title>
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="images/AGTT-TCM.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/AGTT-TCM.jpg" type="image/x-icon">
 <link rel="icon" href="images/AGTT-TCM.jpg" type="image/x-icon">
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
