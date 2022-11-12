@@ -3,7 +3,7 @@ include("header.php");
 ?>
 
 <body>
-	<div>
+	<div style="margin-top: 100px; margin-bottom: 100px">
 		<form class= "" action="send.php" style="padding-left: 100px" method="post">
 			<label for="email" class="form-label">Email</label>
 			<input type="email" name="email" class='form-control' style="width: 30%" value=""><br>

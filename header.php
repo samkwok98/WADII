@@ -80,7 +80,7 @@ $tim = date("H:i:s");
         <div class="collapse navbar-collapse" id="nav-open-btn">
           <ul class="nav">
             <li> <a href="index.php">Home </a></li>
-            <li><a href="about.php">About</a></li>            
+            <li><a href="about.php">What's new</a></li>            
             <li><a href="patientappointment.php">Appointment </a></li>
             <li><a href="storeindex.php">Store </a></li>
             <li><a href="contactus.php">Contact </a></li>

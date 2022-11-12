@@ -73,7 +73,7 @@
                 data-endelementdelay="0.1" 
                 data-endspeed="300" 
                 data-scrolloffset="0"
-                style="z-index: 8;"><a href="#." class="btn">Book Now</a> </div>
+                style="z-index: 8;"><a href="patientappointment.php" class="btn">Book Now</a> </div>
           </li>
           
           <!-- SLIDE  -->
@@ -134,7 +134,8 @@
                 data-endelementdelay="0.1" 
                 data-endspeed="300" 
                 data-scrolloffset="0"
-                style="z-index: 8;"><a href="tel:98789882" class="btn">CONTACT US NOW</a> </div>
+                style="z-index: 8;"><a href="tel:98789882" class="btn">Contact Us Now</a>
+            </div>
           </li>
           
           <!-- SLIDE  -->
@@ -166,7 +167,22 @@
                 data-endelementdelay="0.1" 
                 data-endspeed="300" 
                 data-scrolloffset="0"
-                style="z-index: 7; font-size:20px; font-weight:500; line-height:26px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">It improves fertility issues, women’s health, pain management and digestive issues </div>
+                style="z-index: 7; font-size:20px; font-weight:500; line-height:26px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">It improves fertility issues, women's health, pain management and digestive issues
+            </div>
+
+            <!-- LAYER NR. 4 -->
+            <div class="tp-caption lfb tp-resizeme scroll" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="120"
+                data-speed="800" 
+                data-start="1300"
+                data-easing="Power3.easeInOut" 
+                data-elementdelay="0.1" 
+                data-endelementdelay="0.1" 
+                data-endspeed="300" 
+                data-scrolloffset="0"
+                style="z-index: 8;"><a href="#tabpanel" class="btn">More Info</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -190,27 +206,27 @@
                 <ul class="row">
                   <li class="col-sm-6">
                     <h6> <i class="lnr  lnr-checkmark-circle"></i> TCM STORE</h6>
-                    <p>AGTT provides you the ability to buy TCM </p>
+                    <p>Purchase TCM goods online with AGTT's online store</p>
                   </li>
                   <li class="col-sm-6">
                     <h6> <i class="lnr  lnr-checkmark-circle"></i> QUALIFIED DOCTORS</h6>
-                    <p>We have the top notch quaified and certified doctors </p>
+                    <p>Top-notch, qualified and certified doctors</p>
                   </li>
                   <li class="col-sm-6">
                     <h6> <i class="lnr  lnr-checkmark-circle"></i> ACCOUNT MANAGEMENT</h6>
-                    <p>You can log in to manage your account!</p>
+                    <p>Log in to manage your account</p>
                   </li>
                   <li class="col-sm-6">
                     <h6> <i class="lnr  lnr-checkmark-circle"></i> ONLINE APPOINTMENT</h6>
-                    <p>You can book your clinic appointment with us through this website </p>
+                    <p>Book your clinic appointment with us through our online portal</p>
                   </li>
                   <li class="col-sm-6">
                     <h6> <i class="lnr  lnr-checkmark-circle"></i> CHATBOT</h6>
-                    <p>You can chat with our AI powered chatbot to get more interesting insights </p>
+                    <p>Chat with our AI-powered bot to get more insights </p>
                   </li>
                   <li class="col-sm-6">
                     <h6> <i class="lnr  lnr-checkmark-circle"></i> TCM ARTICLES</h6>
-                    <p>You can get your daily dose of TCM rumor debunk!</p>
+                    <p>Get your daily dose of TCM news</p>
                   </li>
                   
                 </ul>
@@ -227,7 +243,7 @@
                   <li> Wednesday <span>10.00 - 18.00</span></li>
                   <li> Thursday <span>10.00 - 18.00</span></li>
                   <li> Friday <span>10.00 - 18.00</span></li>
-                  <li> Saturday <span>10.00 - 12.00</span></li>
+                  <li> Saturday <span>10.00 - 16.00</span></li>
                   <li> Sunday <span>Closed</span></li>
                 </ul>
               </div>
@@ -253,7 +269,7 @@
       <div class="department">
         <div class="container"> 
           <!-- Tab Panel -->
-          <div role="tabpanel">
+          <div role="tabpanel" id="tabpanel">
             <div class="dep-sec-nav"> 
               <!-- Nav tabs -->
               <ul class="nav nav-tabs" role="tablist">
