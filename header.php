@@ -88,7 +88,6 @@ $tim = date("H:i:s");
             <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log In </a>
               <ul class="dropdown-menu multi-level" style="display: none;">
                 <li><a href="adminlogin.php">Admin</a></li>
-                <li><a href="doctorlogin.php">Doctor</a></li>
                 <li><a href="patientlogin.php">Patient </a></li>
                 
               </ul>
