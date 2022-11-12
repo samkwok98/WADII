@@ -21,6 +21,15 @@ $total_products = $pdo->query('SELECT * FROM products')->rowCount();
 include("header.php")
 ?>
 
+<div class="text-right">
+    <a href="storecart.php">
+        <button class="btn m-5">
+            <img src="./images/cart.png" alt="" height="50px" width="50px">
+            <strong>View Cart</strong>
+        </button>
+    </a>
+</div>
+
 <div class="products content-wrapper container">
     <h1>Products</h1>
     <p><?=$total_products?> Products</p>

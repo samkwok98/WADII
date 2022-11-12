@@ -4,7 +4,6 @@ $stmt = $pdo->prepare('SELECT * FROM products ORDER BY date_added DESC LIMIT 4')
 $stmt->execute();
 $recently_added_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
-<?php?>
 
 <?php
 include("header.php");
@@ -14,6 +13,16 @@ include("header.php");
     <h2>Authentic TCM Products</h2>
     <p>AG T&T Quality Guranteed </p>
 </div>
+
+<div class="text-right">
+    <a href="storecart.php">
+        <button class="btn m-5">
+            <img src="./images/cart.png" alt="" height="50px" width="50px">
+            <strong>View Cart</strong>
+        </button>
+    </a>
+</div>
+
 <div class="recentlyadded content-wrapper row">
     <h2>Recently Added Products</h2>
     <div class="products row d-flex flex-wrap align-items-center">
