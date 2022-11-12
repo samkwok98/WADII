@@ -201,7 +201,7 @@ header nav {
 }
 .cart .buttons {
 	text-align: right;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 }
 .cart .buttons input[type="submit"] {
 	margin-left: 5px;
@@ -238,6 +238,23 @@ header nav {
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
+}
+/* Paypal */
+.paypal {
+	text-align: right;
+	padding-bottom: 40px;
+}
+.paypal button {
+	display: inline-block;
+	padding: 10px 20px 7px 20px;
+	background-color: #FFC439;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	width: 215px;
+}
+.paypal button:hover {
+	background-color: #f3bb37;
 }
 
 

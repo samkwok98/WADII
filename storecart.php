@@ -80,6 +80,37 @@ if ($products_in_cart) {
         $subtotal += (float)$product['price'] * (int)$products_in_cart[$product['id']];
     }
 }
+
+// Paypal
+// For testing purposes set this to true, if set to true it will use paypal sandbox
+$testmode = true;
+$paypalurl = $testmode ? 'https://www.sandbox.paypal.com/cgi-bin/webscr' : 'https://www.paypal.com/cgi-bin/webscr';
+// If the user clicks the PayPal checkout button...
+if (isset($_POST['paypal']) && $products_in_cart && !empty($products_in_cart)) {
+    // Variables we need to pass to paypal
+    // Make sure you have a business account and set the "business" variable to your paypal business account email
+    $data = array(
+        'cmd'			=> '_cart',
+        'upload'        => '1',
+        'lc'			=> 'EN',
+        'business' 		=> 'payments@yourwebsite.com',
+        'cancel_return'	=> 'http://localhost/WADII_GITHUB/storeindex.php?page=storecart',
+        'notify_url'	=> 'http://localhost/WADII_GITHUB/storeindex.php?page=storecart&ipn_listener=paypal',
+        'currency_code'	=> 'SGD',
+        'return'        => 'http://localhost/WADII_GITHUB/storeindex.php?page=storeplaceorder'
+    );
+    // Add all the products that are in the shopping cart to the data array variable
+    for ($i = 0; $i < count($products); $i++) {
+        $data['item_number_' . ($i+1)] = $products[$i]['id'];
+        $data['item_name_' . ($i+1)] = $products[$i]['name'];
+        $data['quantity_' . ($i+1)] = $products_in_cart[$products[$i]['id']];
+        $data['amount_' . ($i+1)] = $products[$i]['price'];
+    }
+    // Send the user to the paypal checkout screen
+    header('location:' . $paypalurl . '?' . http_build_query($data));
+    // End the script don't need to execute anything else
+    exit;
+}
 ?>
 
 <?php
@@ -132,12 +163,64 @@ include('header.php')
             <span class="text">Subtotal</span>
             <span class="price">&dollar;<?=$subtotal?></span>
         </div>
+            <div class="mb-3">
+            <label for="text" class="form-label" >Full Name</label>
+                <input type="text" class="form-control" id="InputFullname"  required>
+                <label for="email" class="form-label" >Email address</label>
+                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" required>
+                <label for="number" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="InputNumber" required>
+                <label for="text" class="form-label">Address</label>
+                <input type="text" class="form-control" id="InputAddress" required>
+            </div>
         <div class="buttons">
-            <input type="submit" value="Update" name="update">
-            <input type="submit" value="Place Order" name="placeorder">
+            <input type="submit" value="Update Subtotal" name="update">
+
         </div>
+        <div class="paypal">
+            <button type="submit" name="paypal"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" border="0" alt="PayPal Logo">
+        </button>
+</div>
     </form>
 </div>
+
+
+
+<?php
+
+//Start Session
+include("dbconnection.php");
+
+
+ // Taking all values from the form data(input)
+$name =  $_REQUEST['InputFullname'];
+$email = $_REQUEST['InputEmail'];
+$number =  $_REQUEST['InputNumber'];
+$address = $_REQUEST['InputAddress'];
+$cart = $products_in_cart;
+echo $cart;
+
+
+ // Performing insert query execution
+ // here our table name is college
+$sql = "INSERT INTO transactions  VALUES ('',
+    '$name','$email','$number','$address','$cart')";
+
+if(mysqli_query($conn, $sql)){
+    echo "<h3>data stored in a database successfully."
+        . " Please browse your localhost php my admin"
+        . " to view the updated data</h3>";
+
+    echo nl2br("\n$first_name\n $last_name\n "
+        . "$gender\n $address\n $email");
+} else{
+    echo "ERROR: Hush! Sorry $sql. "
+        . mysqli_error($conn);
+}
+
+ // Close connection
+mysqli_close($conn);
+?>
 
 <?php
 include("footer.php")

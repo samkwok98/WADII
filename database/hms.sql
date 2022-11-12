@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `hms`
+-- Database: `AGT&T`
 --
 
 -- --------------------------------------------------------
@@ -626,7 +626,7 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
--- Store Items
+-- Store Products
 
 CREATE TABLE IF NOT EXISTS `products` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
@@ -640,6 +640,7 @@ CREATE TABLE IF NOT EXISTS `products` (
 	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
+-- Store products Insert
 INSERT INTO `products` (`id`, `name`, `desc`, `price`, `currency`, `quantity`, `img`, `date_added`) VALUES
 (1, 'Bird Nest', '<p>Ready-to-drink and can be taken chilled or warmed.</p>\r\n<h3>Suitable for:</h3>\r\n<ul>\r\n<li>All ages</li>\r\n<li>Beauty Care</li>\r\n<li>Pregnant women or new mothers during post-natal periods</li>\r\n<li>Recovering Patients</li>\r\n</ul>', '50.00', 'SGD', 50, 'itemID1.jpg', '2022-11-06 16:00:00'),
 (2, 'Ginseng', '<p>Late nights and stress can burn away the Fluid (Yin) in the body, leading to a drained and tired state.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Boosts Qi</li>\r\n<li>Nourish Yin</li>\r\n<li>Hydrates body</li>\r\n<li>Clears Heat</li>\r\n</ul>', '150.00', 'SGD', 50, 'itemID2.jpg', '2022-11-06 16:00:00'),
@@ -650,4 +651,39 @@ INSERT INTO `products` (`id`, `name`, `desc`, `price`, `currency`, `quantity`, `
 (7,'Herba Cistanche' ,'<p>The pilp stem with scales of the perennial parasitic plants Cistanche deserticola Y. C. Ma of family Orobanchaceae. Sweet, salty, warm; kidney and large intestine meridians entered.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Tonify kidney yang</li>\r\n</li>supplement essence and blood</li>\r\n</li>moisten intestines to smooth stool.</li>\r\n</ul>', '50.00', 'SGD', 50, 'itemID7.jpg', '2022-11-11 10:00:00'),
 (8,'Pinellia Tuber' ,'<p>White, firm, powder-like, old. Light smell, acrid and spicy, tongue-numbed taste stimulating the throat.Processed with ginger juice and alum.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Dry dampness and resolve phlegm</li>\r\n<li>check adverse rise of qi and stop vomiting</li>\r\n<li>relieve stuffiness and dissipate nodulation</li>\r\n<li>resolve swelling</li>\r\n<li>alleviate pain externally.</li>\r\n</ul>', '35.00', 'SGD', 50, 'itemID8.jpg', '2022-11-11 10:00:00');
 
+
+CREATE TABLE `payments` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `product_id` float(10,2) NOT NULL,
+ `transaction_id` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+ `payment_amount` float(10,2) NOT NULL,
+ `currency_code` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+ `payment_status` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+ `invoice_id` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+ `product_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+ `createdtime` datetime DEFAULT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE `transactions` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`txn_id` varchar(255) NOT NULL,
+	`payment_amount` decimal(7,2) NOT NULL,
+	`payment_status` varchar(30) NOT NULL,
+	`item_id` varchar(255) NOT NULL,
+	`item_quantity` varchar(255) NOT NULL,
+	`item_mc_gross` varchar(255) NOT NULL,
+	`created` datetime NOT NULL,
+	`payer_email` varchar(255) NOT NULL,
+	`first_name` varchar(100) NOT NULL,
+	`last_name` varchar(100) NOT NULL DEFAULT '',
+	`address_street` varchar(255) NOT NULL,
+	`address_city` varchar(255) NOT NULL,
+	`address_state` varchar(255) NOT NULL,
+	`address_zip` varchar(255) NOT NULL,
+	`address_country` varchar(255) NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `transactions` ADD UNIQUE KEY `txn_id` (`txn_id`);
 
