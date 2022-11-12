@@ -1,8 +1,12 @@
 
   <?php include 'header.php';?>
   <style>
-    h6 {
+    .doktor {
       border: 1px solid black;
+    }
+    .img-responsive {
+      height: 400px;
+      width: 400px;
     }
   </style>
   <!-- Bnr Header -->
@@ -186,15 +190,15 @@
                 <ul class="row">
                   <li class="col-sm-6">
                     <h6> <i class="lnr  lnr-checkmark-circle"></i> TCM STORE</h6>
-                    <p>AGTT provides you the ability to buy Traditional Chinese Medicinee </p>
+                    <p>AGTT provides you the ability to buy TCM </p>
                   </li>
                   <li class="col-sm-6">
                     <h6> <i class="lnr  lnr-checkmark-circle"></i> QUALIFIED DOCTORS</h6>
                     <p>We have the top notch quaified and certified doctors </p>
-                    <li class="col-sm-6">
+                  </li>
+                  <li class="col-sm-6">
                     <h6> <i class="lnr  lnr-checkmark-circle"></i> ACCOUNT MANAGEMENT</h6>
                     <p>You can log in to manage your account!</p>
-                  </li>
                   </li>
                   <li class="col-sm-6">
                     <h6> <i class="lnr  lnr-checkmark-circle"></i> ONLINE APPOINTMENT</h6>
@@ -233,11 +237,6 @@
       </div>
     </section>
     
-  
-
-   
-    
-    
     
     <!-- Departments -->
     <section class="p-t-b-150 padding-bottom-0">
@@ -266,7 +265,7 @@
             </div>
             
             <!-- Tab Content -->
-            <div class="tab-content"> 
+            <div class="tab-content">
               
               <!-- TCM -->
               <div role="tabpanel" class="tab-pane fade" id="TCM"> 
@@ -274,7 +273,7 @@
                 <div class="dep-sec-txt">
                   <div class="row">
                     <div class="col-md-7">
-                      <h5>Our Best <span>TCM</span> Services</h5>
+                      <h5>Our Best TCM Services</h5>
                       <p></p>
                       
                       <!-- List Style Check -->
@@ -290,7 +289,7 @@
                     <div class="col-md-offset-1 col-md-4">
                       <div class="doctor-img"> <img class="img-responsive" src="images/doc1.jpg" alt="" >
                         <div class="name-doc">
-                          <h6>Wong Sia Peh <span>TCM Physician</span></h6>
+                          <h6 class="doktor">Wong Sia Peh<span>TCM Physician</span></h6>
                         </div>
                       </div>
                     </div>
@@ -304,7 +303,7 @@
                 <div class="dep-sec-txt">
                   <div class="row">
                     <div class="col-md-7">
-                      <h5>Our Best <span>Acupuncture</span> Services</h5>
+                      <h5>Our Best Acupuncture Services</h5>
                       
                       <!-- List Style Check -->
                       <ul class="list-style-check">
@@ -319,7 +318,7 @@
                     <div class="col-md-offset-1 col-md-4">
                       <div class="doctor-img"> <img class="img-responsive" src="images/doc2.jpg" alt="" >
                         <div class="name-doc">
-                          <h6>Ms.Roxy Quek <span>Acupuncture Specialists</span></h6>
+                          <h6 class="doktor">Ms.Roxy Quek <span>Acupuncture Specialists</span></h6>
                         </div>
                       </div>
                     </div>
@@ -333,7 +332,7 @@
                 <div class="dep-sec-txt">
                   <div class="row">
                     <div class="col-md-7">
-                      <h5>Our Best Moxibustion </h5>
+                      <h5>Our Best Moxibustion Services</h5>
                       
                       <!-- List Style Check -->
                       <ul class="list-style-check">
@@ -348,7 +347,7 @@
                     <div class="col-md-offset-1 col-md-4">
                       <div class="doctor-img"> <img class="img-responsive" src="images/doc3.jpg" alt="" >
                         <div class="name-doc">
-                          <h6>Ms.Anna Huang <span>Moxibustion Specialists</span></h6>
+                          <h6 class="doktor">Ms.Anna Huang <span>Moxibustion Specialists</span></h6>
                         </div>
                       </div>
                     </div>
@@ -362,7 +361,7 @@
                 <div class="dep-sec-txt">
                   <div class="row">
                     <div class="col-md-7">
-                      <h5>Our Best <span>Reflexology</span> Services</h5>
+                      <h5>Our Best Reflexology Services</h5>
                      
                       
                       <!-- List Style Check -->
@@ -378,7 +377,7 @@
                     <div class="col-md-offset-1 col-md-4">
                       <div class="doctor-img"> <img class="img-responsive" src="images/doc4.jpg" alt="" >
                         <div class="name-doc">
-                          <h6>Mr Wong Jie Peng<br><span>Reflexology Specialists</span></h6>
+                          <h6 class="doktor">Mr Wong Jie Peng<br><span>Reflexology Specialists</span></h6>
                         </div>
                       </div>
                     </div>
