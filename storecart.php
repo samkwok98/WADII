@@ -197,26 +197,17 @@ $name =  $_REQUEST['InputFullname'];
 $email = $_REQUEST['InputEmail'];
 $number =  $_REQUEST['InputNumber'];
 $address = $_REQUEST['InputAddress'];
-$cart = $products_in_cart;
-echo $cart;
+$total = $subtotal;
+
 
 
  // Performing insert query execution
  // here our table name is college
 $sql = "INSERT INTO transactions  VALUES ('',
-    '$name','$email','$number','$address','$cart')";
+    '$name','$email','$number','$address','$total')";
 
-if(mysqli_query($conn, $sql)){
-    echo "<h3>data stored in a database successfully."
-        . " Please browse your localhost php my admin"
-        . " to view the updated data</h3>";
+// SQL statement to deduct the quantity of stock from DB
 
-    echo nl2br("\n$first_name\n $last_name\n "
-        . "$gender\n $address\n $email");
-} else{
-    echo "ERROR: Hush! Sorry $sql. "
-        . mysqli_error($conn);
-}
 
  // Close connection
 mysqli_close($conn);
