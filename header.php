@@ -11,11 +11,11 @@ $tim = date("H:i:s");
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="author" content="M_Adnan" />
 <!-- Document Title -->
-<title>Hospital Mangement System</title>
+<title>AGTT TCM</title>
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="images/itsc.ico" type="image/x-icon">
-<link rel="icon" href="images/itsc.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/AGTT-TCM.ico" type="image/x-icon">
+<link rel="icon" href="images/AGTT-TCM.jpg" type="image/x-icon">
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
