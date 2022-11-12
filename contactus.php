@@ -1,12 +1,19 @@
 <?php
 include("header.php");
 ?>
+
+<div class='mb-3'>
+	<label for='exampleFormControlTextarea1' class='form-label'>Example textarea</label>
+	<textarea class='form-control' id='exampleFormControlTextarea1' rows='3'></textarea>
+</div>
+
+
 <form class= "" action="send.php" method="post">
 	Email <input type="email" name="email" value=""><br>
 	Subject <input type="text" name="subject" value=""><br>
 	Message <input type="text" name="message" value=""><br>
 	<button type="submit" name="send">Send</button>
-	</form>
+</form>
 <?php
 include("footer.php");
 function sendmail($toaddress,$subject,$message)
