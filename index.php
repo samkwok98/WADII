@@ -4,6 +4,10 @@
     .doktor {
       border: 1px solid black;
     }
+    .img-responsive {
+      height: 400px;
+      width: 400px;
+    }
   </style>
   <!-- Bnr Header -->
   <section class="main-banner">
@@ -233,11 +237,6 @@
       </div>
     </section>
     
-  
-
-   
-    
-    
     
     <!-- Departments -->
     <section class="p-t-b-150 padding-bottom-0">
@@ -266,7 +265,7 @@
             </div>
             
             <!-- Tab Content -->
-            <div class="tab-content"> 
+            <div class="tab-content">
               
               <!-- TCM -->
               <div role="tabpanel" class="tab-pane fade" id="TCM"> 
@@ -290,7 +289,7 @@
                     <div class="col-md-offset-1 col-md-4">
                       <div class="doctor-img"> <img class="img-responsive" src="images/doc1.jpg" alt="" >
                         <div class="name-doc">
-                          <h6 class="doktor">Wong Sia Peh <span>TCM Physician</span></h6>
+                          <h6 class="doktor">Wong Sia Peh<span>TCM Physician</span></h6>
                         </div>
                       </div>
                     </div>

@@ -2,18 +2,21 @@
 include("header.php");
 ?>
 
-<div class='mb-3'>
-	<label for='exampleFormControlTextarea1' class='form-label'>Example textarea</label>
-	<textarea class='form-control' id='exampleFormControlTextarea1' rows='3'></textarea>
-</div>
+<body>
+	<div>
+		<form class= "" action="send.php" style="padding-left: 100px" method="post">
+			<label for="email" class="form-label">Email</label>
+			<input type="email" name="email" class='form-control' style="width: 30%" value=""><br>
+			<label for="subject" class="form-label">Subject</label>
+			<input type="text" name="subject" class='form-control' style="width: 30%" value=""><br>
+			<label for="subject" class="form-label">Message</label>
+			<input type="text" name="message" class='form-control' style="width: 70%; height: 100px" value=""><br>
 
+			<button type="submit" class="btn btn-primary" name="send">Send</button>
+		</form>
+	</div>
+</body>
 
-<form class= "" action="send.php" method="post">
-	Email <input type="email" name="email" value=""><br>
-	Subject <input type="text" name="subject" value=""><br>
-	Message <input type="text" name="message" value=""><br>
-	<button type="submit" name="send">Send</button>
-</form>
 <?php
 include("footer.php");
 function sendmail($toaddress,$subject,$message)
