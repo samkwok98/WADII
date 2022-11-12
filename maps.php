@@ -25,7 +25,7 @@
       <h2>Our stores</h2>
 
       <div class="text-center mt-5 mb-5">
-        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <div class="btn-group" role="group">
             <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" onclick="change('scis')" checked>
             <label class="btn btn-outline-primary" for="btnradio1">SCIS Branch</label>
             <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onclick="change('sob')">
