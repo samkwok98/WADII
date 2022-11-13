@@ -55,11 +55,6 @@ if (isset($_POST['update']) && isset($_SESSION['cart'])) {
     exit;
 }
 
-// Send the user to the place order page if they click the Place Order button, also the cart should not be empty
-if (isset($_POST['placeorder']) && isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
-    header('Location: storeindex.php?page=storeplaceorder');
-    exit;
-}
 
 // Check the session variable for products in cart
 $products_in_cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : array();
@@ -106,6 +101,17 @@ if (isset($_POST['paypal']) && $products_in_cart && !empty($products_in_cart)) {
         $data['quantity_' . ($i+1)] = $products_in_cart[$products[$i]['id']];
         $data['amount_' . ($i+1)] = $products[$i]['price'];
     }
+    //Start Session
+    include("dbconnection.php");
+    //Adjust qty sql DB
+    for ($i = 0; $i < count($products); $i++) {
+        $productId = $products[$i]['id'];
+        $qty = $products_in_cart[$products[$i]['id']];
+        $sql = "UPDATE products SET quantity = quantity - $qty 
+                WHERE id = $productId";
+    }
+    // Close connection
+    mysqli_close($con);
     // Send the user to the paypal checkout screen
     header('location:' . $paypalurl . '?' . http_build_query($data));
     // End the script don't need to execute anything else
@@ -163,16 +169,7 @@ include('header.php')
             <span class="text">Subtotal</span>
             <span class="price">&dollar;<?=$subtotal?></span>
         </div>
-            <div class="mb-3">
-            <label for="text" class="form-label" >Full Name</label>
-                <input type="text" class="form-control" id="InputFullname"  required>
-                <label for="email" class="form-label" >Email address</label>
-                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" required>
-                <label for="number" class="form-label">Phone Number</label>
-                <input type="number" class="form-control" id="InputNumber" required>
-                <label for="text" class="form-label">Address</label>
-                <input type="text" class="form-control" id="InputAddress" required>
-            </div>
+
         <div class="buttons">
             <input type="submit" value="Update Subtotal" name="update">
 
@@ -186,32 +183,7 @@ include('header.php')
 
 
 
-<?php
 
-//Start Session
-include("dbconnection.php");
-
-
- // Taking all values from the form data(input)
-$name =  $_REQUEST['InputFullname'];
-$email = $_REQUEST['InputEmail'];
-$number =  $_REQUEST['InputNumber'];
-$address = $_REQUEST['InputAddress'];
-$total = $subtotal;
-
-
-
- // Performing insert query execution
- // here our table name is college
-$sql = "INSERT INTO transactions  VALUES ('',
-    '$name','$email','$number','$address','$total')";
-
-// SQL statement to deduct the quantity of stock from DB
-
-
- // Close connection
-mysqli_close($conn);
-?>
 
 <?php
 include("footer.php")
