@@ -77,6 +77,10 @@ Install and set up the app with the following instructions
    Name: Sam
    Password: 12345678
 
+3. PayPal Sandbox Account (for use in Store Page PayPal payment)
+    Username: sb-rh0ga22168566@personal.example.com
+    Password: test12345
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
