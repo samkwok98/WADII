@@ -189,14 +189,14 @@ CREATE TABLE IF NOT EXISTS `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `desc`, `price`, `currency`, `quantity`, `img`, `date_added`) VALUES
-(1, 'Bird Nest', '<p>Ready-to-drink and can be taken chilled or warmed.</p>\r\n<h3>Suitable for:</h3>\r\n<ul>\r\n<li>All ages</li>\r\n<li>Beauty Care</li>\r\n<li>Pregnant women or new mothers during post-natal periods</li>\r\n<li>Recovering Patients</li>\r\n</ul>', '50.00', 'SGD', 50, 'itemID1.jpg', '2022-11-06 16:00:00'),
-(2, 'Ginseng', '<p>Late nights and stress can burn away the Fluid (Yin) in the body, leading to a drained and tired state.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Boosts Qi</li>\r\n<li>Nourish Yin</li>\r\n<li>Hydrates body</li>\r\n<li>Clears Heat</li>\r\n</ul>', '150.00', 'SGD', 50, 'itemID2.jpg', '2022-11-06 16:00:00'),
-(3, 'Royal Jelly', '<p>Raw and pure honey, from the best of bee farms.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Beauty Support</li>\r\n<li>General Wellness</li>\r\n</ul>', '70.00','SGD', 50, 'itemID3.jpg', '2022-11-06 16:00:00'),
-(4,'AG T&T Supplemental Powder' ,'<p>Our custom made, signature supplmental powder, made with the freshest of ingredients from our secret farm</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Beauty Support</li>\r\n<li>Energizing Effect</li>\r\n</ul>', '300.00', 'SGD', 50, 'itemID4.jpg', '2022-11-06 16:00:00'),
-(5,'Snow Lotus Seeds 250g Pack' ,'<p>Snow lotus is a flowering plant in the family of Asteraceae. It is grown at mountain peaks with very cold temperatures in the polar Asia, Europe and North America, its largest habitat diversity at the peak of the Himalayas.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>normalize blood pressure</li>\r\n<li>slow down the formation of fats in the body</li>\r\n<li>Eliminate gall bladder stones</li>\r\n<li>To prevent viral disease</li>\r\n<li>Prevent and cure impotence</li>\r\n<li>Increase the stimulant for kidney and bladder</li>\r\n<li>Reduce cholesterol for a healthier heart</li>\r\n<li>Preventing adverse effects from consumption of anti biotic</li>\r\n<li>Aids digestive health</li>\r\n<li>Helps to heal wounds</li>\r\n</ul>','30.00', 'SGD', 100, 'itemID5.jpg', '2022-11-11 00:08:00'),
-(6,'Peach Gum Jelly' ,'<p>Our custom made, signature supplmental powder, made with the freshest of ingredients from our secret farm</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Detox intestine</li>\r\n<li>Promote bowel movement</li>\r\n<li>Improve skin texture</li>\r\n<li>Increase moisture to the skin</li>\r\n<li>Lighten pigmentation</li>\r\n<li>Improve acnes or pimples skin</li>\r\n</ul>', '10.00', 'SGD', 50, 'itemID6.jpg', '2022-11-11 00:08:00'),
-(7,'Herba Cistanche' ,'<p>The pilp stem with scales of the perennial parasitic plants Cistanche deserticola Y. C. Ma of family Orobanchaceae. Sweet, salty, warm; kidney and large intestine meridians entered.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Tonify kidney yang</li>\r\n</li>supplement essence and blood</li>\r\n</li>moisten intestines to smooth stool.</li>\r\n</ul>', '50.00', 'SGD', 50, 'itemID7.jpg', '2022-11-11 10:00:00'),
-(8,'Pinellia Tuber' ,'<p>White, firm, powder-like, old. Light smell, acrid and spicy, tongue-numbed taste stimulating the throat.Processed with ginger juice and alum.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Dry dampness and resolve phlegm</li>\r\n<li>check adverse rise of qi and stop vomiting</li>\r\n<li>relieve stuffiness and dissipate nodulation</li>\r\n<li>resolve swelling</li>\r\n<li>alleviate pain externally.</li>\r\n</ul>', '35.00', 'SGD', 50, 'itemID8.jpg', '2022-11-11 10:00:00');
+(1, 'Bird Nest', '<p>Ready-to-drink and can be taken chilled or warmed.</p>\r\n<h3>Suitable for:</h3>\r\n<ul>\r\n<li>All ages</li>\r\n<li>Beauty Care</li>\r\n<li>Pregnant women or new mothers during post-natal periods</li>\r\n<li>Recovering Patients</li>\r\n</ul>', '50.00', 'SGD', 10, 'itemID1.jpg', '2022-11-06 16:00:00'),
+(2, 'Ginseng', '<p>Late nights and stress can burn away the Fluid (Yin) in the body, leading to a drained and tired state.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Boosts Qi</li>\r\n<li>Nourish Yin</li>\r\n<li>Hydrates body</li>\r\n<li>Clears Heat</li>\r\n</ul>', '150.00', 'SGD', 10, 'itemID2.jpg', '2022-11-06 16:00:00'),
+(3, 'Royal Jelly', '<p>Raw and pure honey, from the best of bee farms.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Beauty Support</li>\r\n<li>General Wellness</li>\r\n</ul>', '70.00','SGD', 10, 'itemID3.jpg', '2022-11-06 16:00:00'),
+(4,'AG T&T Supplemental Powder' ,'<p>Our custom made, signature supplmental powder, made with the freshest of ingredients from our secret farm</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Beauty Support</li>\r\n<li>Energizing Effect</li>\r\n</ul>', '300.00', 'SGD', 10, 'itemID4.jpg', '2022-11-06 16:00:00'),
+(5,'Snow Lotus Seeds 250g Pack' ,'<p>Snow lotus is a flowering plant in the family of Asteraceae. It is grown at mountain peaks with very cold temperatures in the polar Asia, Europe and North America, its largest habitat diversity at the peak of the Himalayas.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>normalize blood pressure</li>\r\n<li>slow down the formation of fats in the body</li>\r\n<li>Eliminate gall bladder stones</li>\r\n<li>To prevent viral disease</li>\r\n<li>Prevent and cure impotence</li>\r\n<li>Increase the stimulant for kidney and bladder</li>\r\n<li>Reduce cholesterol for a healthier heart</li>\r\n<li>Preventing adverse effects from consumption of anti biotic</li>\r\n<li>Aids digestive health</li>\r\n<li>Helps to heal wounds</li>\r\n</ul>','30.00', 'SGD', 10, 'itemID5.jpg', '2022-11-11 00:08:00'),
+(6,'Peach Gum Jelly' ,'<p>Our custom made, signature supplmental powder, made with the freshest of ingredients from our secret farm</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Detox intestine</li>\r\n<li>Promote bowel movement</li>\r\n<li>Improve skin texture</li>\r\n<li>Increase moisture to the skin</li>\r\n<li>Lighten pigmentation</li>\r\n<li>Improve acnes or pimples skin</li>\r\n</ul>', '10.00', 'SGD', 10, 'itemID6.jpg', '2022-11-11 00:08:00'),
+(7,'Herba Cistanche' ,'<p>The pilp stem with scales of the perennial parasitic plants Cistanche deserticola Y. C. Ma of family Orobanchaceae. Sweet, salty, warm; kidney and large intestine meridians entered.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Tonify kidney yang</li>\r\n</li>supplement essence and blood</li>\r\n</li>moisten intestines to smooth stool.</li>\r\n</ul>', '50.00', 'SGD', 10, 'itemID7.jpg', '2022-11-11 10:00:00'),
+(8,'Pinellia Tuber' ,'<p>White, firm, powder-like, old. Light smell, acrid and spicy, tongue-numbed taste stimulating the throat.Processed with ginger juice and alum.</p>\r\n<h3>Benefits:</h3>\r\n<ul>\r\n<li>Dry dampness and resolve phlegm</li>\r\n<li>check adverse rise of qi and stop vomiting</li>\r\n<li>relieve stuffiness and dissipate nodulation</li>\r\n<li>resolve swelling</li>\r\n<li>alleviate pain externally.</li>\r\n</ul>', '35.00', 'SGD', 10, 'itemID8.jpg', '2022-11-11 10:00:00');
 -- --------------------------------------------------------
 
 --
@@ -215,17 +215,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`userid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
--- Table structure for table `transactions`
 
-CREATE TABLE `transactions` (
-	`id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL DEFAULT '',
-  `payer_email` varchar(255) NOT NULL,
-  `payer_number` int(11) NOT NULL,
-	`address` varchar(255) NOT NULL,
-	`payment_amount` decimal(7,2) NOT NULL,
-	PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --
 -- Dumping data for table `user`
 --

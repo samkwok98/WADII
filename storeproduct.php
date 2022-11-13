@@ -21,14 +21,7 @@ if (isset($_GET['id'])) {
 include("header.php")
 ?>
 
-<div class="text-right">
-    <a href="storecart.php">
-        <button class="btn m-5">
-            <img src="./images/cart.png" alt="" height="50px" width="50px">
-            <strong>View Cart</strong>
-        </button>
-    </a>
-</div>
+
 
 <div class="product content-wrapper">
     <img src="images/<?=$product['img']?>" width="500" height="500" alt="<?=$product['name']?>">
