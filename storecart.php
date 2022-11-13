@@ -204,7 +204,7 @@ $total = $subtotal;
  // Performing insert query execution
  // here our table name is college
 $sql = "INSERT INTO transactions  VALUES ('',
-    '$name','$email','$number','$address','$total')";
+'$name','$email','$number','$address','$total')";
 
 // SQL statement to deduct the quantity of stock from DB
 
