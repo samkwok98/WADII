@@ -334,7 +334,7 @@
                     <div class="col-md-offset-1 col-md-4">
                       <div class="doctor-img"> <img class="img-responsive" src="images/doc2.jpg" alt="" >
                         <div class="name-doc">
-                          <h6 class="doktor">Ms.Roxy Quek <span>Acupuncture Specialists</span></h6>
+                          <h6 class="doktor">Roxy Quek <span>Acupuncture Specialist</span></h6>
                         </div>
                       </div>
                     </div>
@@ -363,7 +363,7 @@
                     <div class="col-md-offset-1 col-md-4">
                       <div class="doctor-img"> <img class="img-responsive" src="images/doc3.jpg" alt="" >
                         <div class="name-doc">
-                          <h6 class="doktor">Ms.Anna Huang <span>Moxibustion Specialists</span></h6>
+                          <h6 class="doktor">Anna Huang <span>Moxibustion Specialist</span></h6>
                         </div>
                       </div>
                     </div>
@@ -393,7 +393,7 @@
                     <div class="col-md-offset-1 col-md-4">
                       <div class="doctor-img"> <img class="img-responsive" src="images/doc4.jpg" alt="" >
                         <div class="name-doc">
-                          <h6 class="doktor">Mr Wong Jie Peng<br><span>Reflexology Specialists</span></h6>
+                          <h6 class="doktor">Lee Jie<br><span>Reflexology Specialist</span></h6>
                         </div>
                       </div>
                     </div>
