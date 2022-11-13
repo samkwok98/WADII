@@ -124,10 +124,6 @@ $tim = date("H:i:s");
                         <ul class="ml-menu">
                             <li><a href="department.php">Add Department</a></li>
                             <li><a href="viewdepartment.php">View Department</a></li>
-                            <li><a href="treatment.php">Add Treatment type</a></li>
-                            <li><a href="viewtreatment.php">View Treatment types</a></li>
-                            <li><a href="medicine.php">Add Medicine</a></li>
-                            <li><a href="viewmedicine.php">View Medicine</a></li>
                         </ul>
                     </li>
 
@@ -229,18 +225,6 @@ $tim = date("H:i:s");
                             <li><a href="patientappointment.php" >Add Appointment</a></li>
                             <li><a href="viewappointment.php" >View Appointments</a></li>
                         </ul>
-                    </li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i
-                                class="zmdi zmdi-account-add"></i><span>Prescription</span> </a>
-                        <ul class="ml-menu">
-                            <li><a  href="patviewprescription.php">View Prescription Records</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i
-                                class="zmdi zmdi-account-o"></i><span>Treatment</span> </a>
-                        <ul class="ml-menu">
-                            <li><a href="viewtreatmentrecord.php">View Treatment Records</a></li>
                     </li>
                 </ul>
                 </li>
