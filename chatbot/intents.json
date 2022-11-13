@@ -32,15 +32,15 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
-      "tag": "items",
+      "tag": "products",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
+        "What product do you have?",
+        "What kinds of products are there?",
         "What do you sell?"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "We sell all kinds of health products",
+        "We have bird nests, ginseng, wolfberry and many more!"
       ]
     },
     {
@@ -52,20 +52,34 @@
         "Are you cash only?"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "Sorry, We accept Paypal only at the current moment",
+        "We accept only Paypal"
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "booking",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "Can I book appointment",
+        "Do you take reservation",
+        "Can I make an appoinment"
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "You can make appointment through our appointment page",
+        "Yes, we do. Please use the appointment page to book your appointment with us today!"
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what's your operating hours",
+        "What time do you open",
+        "Timing to open",
+        "When are you open",
+        "Are you open at 9am"
+      ],
+      "responses": [
+        "Our operating hour is from 10-6pm(Mon-Friday) and we are closed on Sunday",
+        "Our operating hour is shown on our main page"
       ]
     },
     {

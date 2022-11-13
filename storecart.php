@@ -183,6 +183,28 @@ include('header.php')
 
 
 
+<?php
+
+//Start Session
+include("dbconnection.php");
+
+
+ // Taking all values from the form data(input)
+$name =  $_REQUEST['InputFullname'];
+$email = $_REQUEST['InputEmail'];
+$number =  $_REQUEST['InputNumber'];
+$address = $_REQUEST['InputAddress'];
+$total = $subtotal;
+
+
+
+ // Performing insert query execution
+ // here our table name is college
+$sql = "INSERT INTO transactions  VALUES ('',
+'$name','$email','$number','$address','$total')";
+
+// SQL statement to deduct the quantity of stock from DB
+
 
 
 <?php
