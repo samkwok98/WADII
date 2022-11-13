@@ -226,18 +226,6 @@ $tim = date("H:i:s");
                             <li><a href="viewappointment.php" >View Appointments</a></li>
                         </ul>
                     </li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i
-                                class="zmdi zmdi-account-add"></i><span>Prescription</span> </a>
-                        <ul class="ml-menu">
-                            <li><a  href="patviewprescription.php">View Prescription Records</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i
-                                class="zmdi zmdi-account-o"></i><span>Treatment</span> </a>
-                        <ul class="ml-menu">
-                            <li><a href="viewtreatmentrecord.php">View Treatment Records</a></li>
-                    </li>
                 </ul>
                 </li>
 
