@@ -126,46 +126,13 @@
     created() {
       axios.get('https://newsapi.org/v2/everything?q=traditional chinese medicine&sortBy=popularity&excludeDomains=upenn.edu&apiKey=f6b246a0574a418bae92f692d65a2b15')
         .then(response => {
-          // console.log(response.data)
           this.articles = response.data
-          // let arr3 = this.top3()
-          // const articleA = arr3[0]
-          // const articleB = arr3[1]
-          // const articleC = arr3[2]
-
-
+          
         })
         .catch(error => {
           console.log(error.message);
         });
-    },
-    methods: {
-      // top3(articles){
-      //   var arr1 = this.articles
-      //   // console.log(arr1)
-      //   // console.log(typeof(arr1))
-      //   var arr2 = arr1.articles
-      //   var arr3 = []
-      //   for (let i=0; i<3; i++){
-      //     arr3.push(arr2[i])
-      //   }
-      //   return arr3
-      // }
-    },
-    computed: {
-      // articleA() {
-      //   let localarr = this.top3()
-      //   return localarr[0]
-      // },
-      // articleB() {
-
-      // },
-      // articleC() {
-
-      // }
-
     }
-
   })
   const vm = app.mount('#app')
 </script>
