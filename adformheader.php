@@ -124,10 +124,6 @@ $tim = date("H:i:s");
                         <ul class="ml-menu">
                             <li><a href="department.php">Add Department</a></li>
                             <li><a href="viewdepartment.php">View Department</a></li>
-                            <li><a href="treatment.php">Add Treatment type</a></li>
-                            <li><a href="viewtreatment.php">View Treatment types</a></li>
-                            <li><a href="medicine.php">Add Medicine</a></li>
-                            <li><a href="viewmedicine.php">View Medicine</a></li>
                         </ul>
                     </li>
 
