@@ -89,10 +89,10 @@ if (isset($_POST['paypal']) && $products_in_cart && !empty($products_in_cart)) {
         'upload'        => '1',
         'lc'			=> 'EN',
         'business' 		=> 'payments@yourwebsite.com',
-        'cancel_return'	=> 'http://localhost/WADII_GITHUB/storeindex.php?page=storecart',
-        'notify_url'	=> 'http://localhost/WADII_GITHUB/storeindex.php?page=storecart&ipn_listener=paypal',
+        'cancel_return'	=> 'http://localhost/storeindex.php?page=storecart',
+        'notify_url'	=> 'http://localhost/storeindex.php?page=storecart&ipn_listener=paypal',
         'currency_code'	=> 'SGD',
-        'return'        => 'http://localhost/WADII_GITHUB/storeindex.php?page=storeplaceorder'
+        'return'        => 'http://localhost/storeindex.php?page=storeplaceorder'
     );
     // Add all the products that are in the shopping cart to the data array variable
     for ($i = 0; $i < count($products); $i++) {
