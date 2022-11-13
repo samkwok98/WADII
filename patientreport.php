@@ -167,78 +167,7 @@ jQuery(document).ready(function($) {
 </div><!-- .toggle (end) -->
 
 
-<!-- Toggle #3 -->
-<div class="toggle">
-	<!-- Toggle Link -->
-	<a href="#" title="Title of Toggle" class="toggle-trigger">Treatment record</a>
-	<!-- Toggle Content to display -->
-	<div class="toggle-content">
-		<p><?php include("treatmentdetail.php"); ?></p>
-	</div><!-- .toggle-content (end) -->
-</div><!-- .toggle (end) -->
 
-<!-- Toggle #4 -->
-<div class="toggle">
-	<!-- Toggle Link -->
-	<a href="#" title="Title of Toggle" class="toggle-trigger">Prescription record</a>
-	<!-- Toggle Content to display -->
-	<div class="toggle-content">
-		<p><?php
-        include("prescriptiondetail.php");
-		?></p>
-	</div><!-- .toggle-content (end) -->
-</div><!-- .toggle (end) -->
-
-<!-- Toggle #5 -->
-<div class="toggle">
-	<!-- Toggle Link -->
-	<a href="#" title="Title of Toggle" class="toggle-trigger">Billing Report</a>
-	<!-- Toggle Content to display -->
-	<div class="toggle-content">
-		<p><?php
-        $billappointmentid= $rsappointment[0]; 
-		include("viewbilling.php"); ?>
-        </p>
-	</div><!-- .toggle-content (end) -->
-</div><!-- .toggle (end) -->
-
-
-<?php
-if(isset($_SESSION[adminid]))
-{
-?>
-    <!-- Toggle #6 -->
-    <div class="toggle">
-        <!-- Toggle Link -->
-        <a href="#" title="Title of Toggle" class="toggle-trigger">Payment Report</a>
-        <!-- Toggle Content to display -->
-        <div class="toggle-content">
-            <p><?php
-            $billappointmentid= $rsappointment[0]; 
-            include("viewpaymentreport.php"); ?>
-                      <?php
-                if(!isset($_SESSION[patientid]))
-                {
-					
-	$sqlbilling_records ="SELECT * FROM billing WHERE appointmentid='$billappointmentid'";
-	$qsqlbilling_records = mysqli_query($con,$sqlbilling_records);
-	$rsbilling_records = mysqli_fetch_array($qsqlbilling_records);
-	
-				  ?>  
-				  
-			 
-				  <a class="btn btn-raised" href="paymentdischarge.php?appointmentid=<?php echo $rsappointment[0]; ?>&patientid=<?php echo $_GET[patientid]; ?>">Make Payment</a>
-			
-			<?php
-	
-                }
-                ?>
-            </p>
-        </div><!-- .toggle-content (end) -->
-    </div><!-- .toggle (end) -->
-<?php
-}
-?>
     </p>
   </div>
 </div>
