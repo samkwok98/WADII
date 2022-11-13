@@ -14,55 +14,39 @@
     <div class="tp-banner-container">
       <div class="tp-banner">
         <ul>
-          
           <!-- SLIDE  -->
           <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" > 
             <!-- MAIN IMAGE --> 
-            <img src="images/background1.jpg"  alt="slider"  data-bgposition=" center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
-            
+            <img src="images/background1.jpg"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+
             <!-- LAYER NR. 1 -->
-            <div class="tp-caption sfl tp-resizeme" 
+            <div class="tp-caption sfb tp-resizeme" 
                 data-x="center" data-hoffset="0" 
-                data-y="center" data-voffset="-120" 
+                data-y="center" data-voffset="-80" 
                 data-speed="800" 
                 data-start="800" 
                 data-easing="Power3.easeInOut" 
-                data-splitin="chars" 
-                data-splitout="none" 
-                data-elementdelay="0.03" 
-                data-endelementdelay="0.4" 
-                data-endspeed="300"
-                style="z-index: 5; font-size:50px; font-weight:500; color:#fff;  max-width: auto; max-height: auto; white-space: nowrap;">Traditional Chinese Herbal Medicines</div>
-            
-            <!-- LAYER NR. 2 -->
-            <div class="tp-caption sfr tp-resizeme" 
-                data-x="center" data-hoffset="0" 
-                data-y="center" data-voffset="-60" 
-                data-speed="800" 
-                data-start="1000" 
-                data-easing="Power3.easeInOut" 
-                data-splitin="chars" 
-                data-splitout="none" 
-                data-elementdelay="0.03" 
-                data-endelementdelay="0.1" 
-                data-endspeed="300" 
-                style="z-index: 6; font-size:40px; color:#fff; font-weight:500; white-space: nowrap;">Works like a charm </div>
-            
-            <!-- LAYER NR. 3 -->
-            <div class="tp-caption sfb tp-resizeme" 
-                data-x="center" data-hoffset="0" 
-                data-y="center" data-voffset="0" 
-                data-speed="800" 
-                data-start="1200" 
-                data-easing="Power3.easeInOut" 
-                data-splitin="none" 
-                data-splitout="none" 
                 data-elementdelay="0.1" 
                 data-endelementdelay="0.1" 
                 data-endspeed="300" 
-                style="z-index: 7;  font-size:22px; color:#fff; font-weight:500; max-width: auto; max-height: auto; white-space: nowrap;">Best TCM you could ever get in SG</div>
+                data-scrolloffset="0"
+                style="z-index: 6; font-size:40px; color:#fff; font-weight:500; white-space: nowrap;">Traditional Chinese Herbal Medicine</div>
             
-            <!-- LAYER NR. 4 -->
+            <!-- LAYER NR. 2 -->
+            <div class="tp-caption sfb tp-resizeme text-center" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="-10" 
+                data-speed="800" 
+                data-start="1000" 
+                data-easing="Power3.easeInOut" 
+                data-elementdelay="0.1" 
+                data-endelementdelay="0.1" 
+                data-endspeed="300" 
+                data-scrolloffset="0"
+                style="z-index: 7; font-size:20px; font-weight:500; line-height:26px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">Works like a charm<br>The best TCM services in Singapore
+            </div>
+
+            <!-- LAYER NR. 3 -->
             <div class="tp-caption lfb tp-resizeme scroll" 
                 data-x="center" data-hoffset="0" 
                 data-y="center" data-voffset="120"
@@ -73,62 +57,48 @@
                 data-endelementdelay="0.1" 
                 data-endspeed="300" 
                 data-scrolloffset="0"
-                style="z-index: 8;"><a href="patientappointment.php" class="btn">Book Now</a> </div>
+                style="z-index: 8;"><a href="patientappointment.php" class="btn">Book Now</a>
+            </div>
           </li>
           
           <!-- SLIDE  -->
           <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" > 
             <!-- MAIN IMAGE --> 
             <img src="images/background2.jpg"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
-            
+
             <!-- LAYER NR. 1 -->
-            <div class="tp-caption sfl tp-resizeme" 
-                data-x="left" data-hoffset="400" 
-                data-y="center" data-voffset="-100" 
-                data-speed="800" 
-                data-start="800" 
-                data-easing="Power3.easeInOut" 
-                data-splitin="chars" 
-                data-splitout="none" 
-                data-elementdelay="0.03" 
-                data-endelementdelay="0.4" 
-                data-endspeed="300"
-                style="z-index: 5; font-size:40px; font-weight:500; color:#fff;  max-width: auto; max-height: auto; white-space: nowrap;">Best Moxibustion Therapy </div>
-            
-            <!-- LAYER NR. 2 -->
-            <div class="tp-caption sfr tp-resizeme" 
-                data-x="left" data-hoffset="400" 
-                data-y="center" data-voffset="-40" 
-                data-speed="800" 
-                data-start="800" 
-                data-easing="Power3.easeInOut" 
-                data-splitin="chars" 
-                data-splitout="none" 
-                data-elementdelay="0.03" 
-                data-endelementdelay="0.4" 
-                data-endspeed="300"
-                style="z-index: 5; font-size:55px; font-weight:500; color:#fff;  max-width: auto; max-height: auto; white-space: nowrap;">AGTT TCM Clinic</div>
-            
-            <!-- LAYER NR. 3 -->
             <div class="tp-caption sfb tp-resizeme" 
-                data-x="left" data-hoffset="400" 
-                data-y="center" data-voffset="30" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="-80" 
                 data-speed="800" 
-                data-start="1400" 
+                data-start="800" 
                 data-easing="Power3.easeInOut" 
-                data-splitin="none" 
-                data-splitout="none" 
                 data-elementdelay="0.1" 
                 data-endelementdelay="0.1" 
                 data-endspeed="300" 
-                style="z-index: 7; font-size:16px; color:#fff; font-weight:500; line-height:26px; max-width: auto; max-height: auto; white-space: nowrap;">Helps you to Increase peripheral arterial blood flow <br>and microvascular permeability</div>
+                data-scrolloffset="0"
+                style="z-index: 6; font-size:40px; color:#fff; font-weight:500; white-space: nowrap;"> Best Moxibustion Therapy</div>
             
-            <!-- LAYER NR. 4 -->
-            <div class="tp-caption lfb tp-resizeme scroll" 
-                data-x="left" data-hoffset="400" 
-                data-y="center" data-voffset="140"
+            <!-- LAYER NR. 2 -->
+            <div class="tp-caption sfb tp-resizeme text-center" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="-10" 
                 data-speed="800" 
-                data-start="1600"
+                data-start="1000" 
+                data-easing="Power3.easeInOut" 
+                data-elementdelay="0.1" 
+                data-endelementdelay="0.1" 
+                data-endspeed="300" 
+                data-scrolloffset="0"
+                style="z-index: 7; font-size:20px; font-weight:500; line-height:26px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">Helps you to Increase peripheral arterial blood flow <br>and microvascular permeability
+            </div>
+
+            <!-- LAYER NR. 3 -->
+            <div class="tp-caption lfb tp-resizeme scroll" 
+                data-x="center" data-hoffset="0" 
+                data-y="center" data-voffset="120"
+                data-speed="800" 
+                data-start="1300"
                 data-easing="Power3.easeInOut" 
                 data-elementdelay="0.1" 
                 data-endelementdelay="0.1" 
@@ -137,13 +107,13 @@
                 style="z-index: 8;"><a href="tel:98789882" class="btn">Contact Us Now</a>
             </div>
           </li>
-          
+
           <!-- SLIDE  -->
           <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" > 
             <!-- MAIN IMAGE --> 
             <img src="images/background3.png"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
             
-            <!-- LAYER NR. 2 -->
+            <!-- LAYER NR. 1 -->
             <div class="tp-caption sfb tp-resizeme" 
                 data-x="center" data-hoffset="0" 
                 data-y="center" data-voffset="-80" 
@@ -156,7 +126,7 @@
                 data-scrolloffset="0"
                 style="z-index: 6; font-size:40px; color:#fff; font-weight:500; white-space: nowrap;"> Acupuncture Therapy</div>
             
-            <!-- LAYER NR. 3 -->
+            <!-- LAYER NR. 2 -->
             <div class="tp-caption sfb tp-resizeme text-center" 
                 data-x="center" data-hoffset="0" 
                 data-y="center" data-voffset="-10" 
@@ -170,7 +140,7 @@
                 style="z-index: 7; font-size:20px; font-weight:500; line-height:26px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">It improves fertility issues, women's health, pain management and digestive issues
             </div>
 
-            <!-- LAYER NR. 4 -->
+            <!-- LAYER NR. 3 -->
             <div class="tp-caption lfb tp-resizeme scroll" 
                 data-x="center" data-hoffset="0" 
                 data-y="center" data-voffset="120"
