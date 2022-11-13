@@ -50,7 +50,7 @@
                 <div class="d-grid gap-0">
                   <a v-bind:href="articles.articles[0].url" type="button"
                     class="btn btn-info text-capitalize d-flex justify-content-center align-items-end"
-                    style="font-size:large">Read more</a>
+                    target="_blank" style="font-size:large">Read more</a>
                 </div>
 
               </div>
@@ -65,7 +65,7 @@
                 <div class="d-grid gap-0">
                   <a v-bind:href="articles.articles[1].url" type="button"
                     class="btn btn-info text-capitalize d-flex justify-content-center align-items-end"
-                    style="font-size:large">Read more</a>
+                    target="_blank" style="font-size:large">Read more</a>
                 </div>
 
               </div>
@@ -80,7 +80,7 @@
                 <div class="d-grid gap-0">
                   <a v-bind:href="articles.articles[2].url" type="button"
                     class="btn btn-info text-capitalize d-flex justify-content-center align-items-end"
-                    style="font-size:large">Read more</a>
+                    target="_blank" style="font-size:large">Read more</a>
                 </div>
 
               </div>
@@ -95,7 +95,7 @@
                 <div class="d-grid gap-0">
                   <a v-bind:href="articles.articles[3].url" type="button"
                     class="btn btn-info text-capitalize d-flex justify-content-center align-items-end"
-                    style="font-size:large">Read more</a>
+                    target="_blank" style="font-size:large">Read more</a>
                 </div>
 
               </div>
