@@ -62,6 +62,8 @@ Install and set up the app with the following instructions
   ```sh
     1. For chatbot function
     1.1. Open Command prompt in chatbot folder, type 'app.py'
+    2. For the application
+    2.1. Go into agtt folder, the home page index.php will be automatically loaded
   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
