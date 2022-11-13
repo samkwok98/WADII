@@ -63,7 +63,7 @@ if(isset($_POST[submit]))
 ?></div>
     <div class="card-top"></div>
     <div class="card">
-        <h1 class="title"><span>Hospital Management System</span>Admin Login <span class="msg">Sign in to start your session</span></h1>
+        <h1 class="title"><span style="font-weight:bold">AGTT TCM Clinic</span>Admin Login<span class="msg">Sign in to start your session</span></h1>
         <div class="col-md-12">
 
     <form method="post" action="" name="frmadminlogin" id="sign_in" onSubmit="return validateform()">

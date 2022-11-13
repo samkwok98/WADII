@@ -58,7 +58,7 @@ if(isset($_POST[submit]))
 ?></div>
     <div class="card-top"></div>
     <div class="card">
-        <h1 class="title"><span>AGTT TCM Clnic</span>PATIENT Login <span class="msg">Hello, Patient!</span></h1>
+        <h1 class="title"><span style="font-weight:bold">AGTT TCM Clinic</span>PATIENT Login<span class="msg">Hello, Patient!</span></h1>
         <div class="col-md-12">
 
     <form method="post" action="" name="frmadminlogin" id="sign_in" onSubmit="return validateform()">
