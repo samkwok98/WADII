@@ -12,7 +12,6 @@
       <li><a href="#installation">Installation</a></li>
     </ul>
   </li>
-  <li><a href="#contact">Contact</a></li>
   <li>
     <a href="#credits">Built With</a>
   </li>
@@ -52,59 +51,35 @@ Install and set up the app with the following instructions
     2. Navigate to the root directory of the project (i.e. cd c:\wamp64\www\)
     3. Update your pip version, type 'python -m pip install --upgrade pip'
     4. Install flask-cors type 'pip install torch Flask torchvision nltk' 
-    5. Create virtualenv, type 'virtualenv env'
-    6. Activate virtualenv virtualenv, type 'Your path\env\Scripts\activate'
-    7. Go into python env, type 'python'
-    8. Import the nltk lib, type 'import nltk'
-    9. Download punkt, type 'nltk.download('punkt')'
-    10. Install virtualenv, type 'pip install virtualenv'
+    5. Install virtualenv, type 'pip install virtualenv'
+    6. Create virtualenv, type 'virtualenv env'
+    7. Activate virtualenv virtualenv, type 'Your path\env\Scripts\activate'
+    8. Go into python env, type 'python'
+    9. Import the nltk lib, type 'import nltk'
+    10. Download punkt, type 'nltk.download('punkt')'
   ```
 4. Running the Application
   ```sh
-    There are two methods in running the application.
-    1. Running via Command Prompt
-    1.1. Open Command prompt
-    1.2. Navigate to /function folder
-    1.3. Run skill, staff, access_role, registration, course, role, learning_journey (i.e. "python skill.py")
-    2. Running via start.bat
-    2.1. Open Windows Explorer
-    2.2. Navigate to /function folder
-    2.3. Double click 'start.bat' to run all the required API endpoints
+    1. For chatbot function
+    1.1. Open Command prompt in chatbot folder, type 'app.py'
   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Demo
-1. First log in 
-<img src="/img/login-page.jpg" width="50%" height="50%">
+### Demo Accounts
+1. Admin Account 
+   Name: admin
+   Password: admin1234
 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
-9. 
-10. 
+2. Patient
+   Name: Sam
+   Password: 12345678
 
-
-
-
-## Contact
-Project Members: 
-* [Shwetha](mailto:shwethak.2020@scis.smu.edu.sg)
-* [Glen](mailto:Glenn.ham.2020@scis.SMU.edu.Sg)
-* [Yubin](mailto:yubin.qiu.2019@scis.smu.edu.sg)
-* [Peng Yuan](mailto:pyguo.2020@scis.smu.edu.sg)
-* [Hong Wei](mailto:hongwei.tin.2021@scis.smu.edu.sg)
-
-  Github Repo: [https://github.com/shwethaaaaaa/SPMG6T6](https://github.com/shwethaaaaaa/SPMG6T6)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Credits
-[![Vue][Vue.js]][Vue-url][![Bootstrap][Bootstrap.com]][Bootstrap-url][![Python][Python.org]][Python-url]
+[![Vue][Vue.js]][Vue-url][![Bootstrap][Bootstrap.com]][Bootstrap-url][![Python][Python.org]][Python-url][![PHP][php.net]][php-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
